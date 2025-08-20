@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from django.db.models import Avg, Count
+from django.db.models import Avg
 from .models import Flight
 from .forms import FlightForm
 
