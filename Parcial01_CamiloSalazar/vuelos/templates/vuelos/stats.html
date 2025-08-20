@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Estadísticas</title></head>
+<body>
+  <h2>Estadísticas de vuelos</h2>
+  <p>{{ count_national }} Nacional(es), {{ count_international }} Internacional(es)</p>
+  <p>Precio promedio de vuelos nacionales:
+     {% if avg_national_price %}${{ avg_national_price }}{% else %}—{% endif %}
+  </p>
+  <p><a href="{% url 'home' %}">Volver</a></p>
+</body>
+</html>
